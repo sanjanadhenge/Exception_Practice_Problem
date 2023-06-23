@@ -36,7 +36,7 @@ namespace Exception_Problem
             }
             catch(Exception)
             {
-                throw new PersonAgeException(PersonAgeException.Exceptiontype.NULL, "Age is Null");
+                throw new PersonAgeException(PersonAgeException.Exceptiontype.EMPTY, "Age is Empty");
             }
            
 

@@ -10,7 +10,7 @@ namespace Exception_Problem
     {
         public enum Exceptiontype
         {
-            NULL
+            NULL,EMPTY
         }
         public Exceptiontype Type { get; set; }
         public PersonAgeException(Exceptiontype Type , string message) : base(message)

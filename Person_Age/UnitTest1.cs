@@ -49,6 +49,23 @@ namespace Person_Age
             }
           
         }
-      
+        int age;
+        [TestMethod]
+        public void TestMethod6()
+        {
+           
+            try
+            {
+                string result = findCategory.CategoryCheck(age);
+
+            }
+            catch (Exception ex)
+            {
+                Assert.AreEqual(ex.Message, "Age is Empty");
+            }
+
+        }
+
+
     }
 }
