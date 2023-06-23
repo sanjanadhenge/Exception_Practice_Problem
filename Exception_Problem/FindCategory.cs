@@ -10,6 +10,7 @@ namespace Exception_Problem
     {
         public string CategoryCheck(int age)
         {
+
             try
             {
                 if (age >= 1 && age <= 14)
@@ -24,19 +25,20 @@ namespace Exception_Problem
                 {
                     return "Adults";
                 }
-                else
+                else if(age >= 65)
                 {
                     return "Seniors";
+                }
+                else
+                {
+                    return default;
                 }
             }
             catch(Exception)
             {
                 throw new PersonAgeException(PersonAgeException.Exceptiontype.NULL, "Age is Null");
             }
-            catch (Exception)
-            {
-                throw new PersonAgeException(PersonAgeException.Exceptiontype.EMPTY, "Age is Empty");
-            }
+           
 
         }
     }
